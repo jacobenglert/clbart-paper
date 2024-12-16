@@ -1,0 +1,45 @@
+# Program Name: set-cart-sim-params.R
+# Description:  Set parameters for CART simulation study
+
+# Load Packages -----------------------------------------------------------
+library(tidyverse)
+library(here)
+
+
+# Specify Parameters ------------------------------------------------------
+
+# Data Parameters
+n <- 10000
+
+# Model Parameters
+num_tree  <- c(1, 5, 10, 25, 50)
+k         <- c(0.1, 0.5, 1.0)
+base      <- c(0.95, 0.5)
+power     <- c(2, 3)
+
+update_mu_mu      <- FALSE
+update_sigma_mu   <- TRUE
+update_s          <- c(TRUE, FALSE)
+update_alpha      <- c(TRUE, FALSE)
+store_lambda      <- TRUE
+
+# MCMC parameters
+num_burn    <- 5000
+num_thin    <- 5
+num_save    <- 1000
+num_chains  <- 1
+
+# Compile
+params <- crossing(n, 
+                   num_tree, k, 
+                   nesting(base, power),
+                   update_mu_mu, update_sigma_mu,
+                   nesting(update_s, update_alpha),
+                   store_lambda,
+                   num_burn, num_thin, num_save, num_chains) |>
+  mutate(key = row_number()) |>
+  select(key, everything())
+
+
+# Export
+write_csv(params, here('cart-sim','Params','cart-sim-params.csv'))

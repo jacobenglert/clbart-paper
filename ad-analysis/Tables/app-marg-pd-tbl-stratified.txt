@@ -1,0 +1,93 @@
+\begin{table}
+\centering
+\caption{\label{tab:app-marg-pd-tbl-stratified}Marginal Partial Dependence Estimates - Stratified Analysis}
+\centering
+\fontsize{11}{13}\selectfont
+\begin{tabular}[t]{llc}
+\toprule
+Subgroup & Covariate & $\exp{\left( \bar{\tau}_{diff} \right)}^a$\\
+\midrule
+ & Female & 0.99 (0.93, 1.02)\\
+
+ & CHF & 0.99 (0.92, 1.04)\\
+
+ & CKD & 1.06 (0.99, 1.20)\\
+
+ & COPD & 1.00 (0.94, 1.07)\\
+
+ & Depression & 1.01 (0.95, 1.08)\\
+
+ & Diabetes & 0.98 (0.92, 1.02)\\
+
+ & Hypertension & 0.99 (0.93, 1.02)\\
+
+\multirow{-8}{*}{\raggedright\arraybackslash Hispanic} & Hyperlipidemia & 1.00 (0.96, 1.05)\\
+\cmidrule{1-3}
+ & Female & 1.00 (0.99, 1.02)\\
+
+ & CHF & 1.00 (0.96, 1.01)\\
+
+ & CKD & 1.01 (0.99, 1.04)\\
+
+ & COPD & 1.00 (0.96, 1.02)\\
+
+ & Depression & 0.99 (0.96, 1.02)\\
+
+ & Diabetes & 1.00 (0.97, 1.02)\\
+
+ & Hypertension & 1.00 (0.98, 1.01)\\
+
+\multirow{-8}{*}{\raggedright\arraybackslash Non-Hispanic White} & Hyperlipidemia & 1.01 (0.99, 1.04)\\
+\cmidrule{1-3}
+ & Female & 1.01 (0.93, 1.10)\\
+
+ & CHF & 1.01 (0.91, 1.13)\\
+
+ & CKD & 1.05 (0.96, 1.17)\\
+
+ & COPD & 0.93 (0.79, 1.04)\\
+
+ & Depression & 0.97 (0.81, 1.11)\\
+
+ & Diabetes & 1.06 (0.98, 1.19)\\
+
+ & Hypertension & 0.85 (0.74, 1.00)\\
+
+\multirow{-8}{*}{\raggedright\arraybackslash Non-Hispanic Black} & Hyperlipidemia & 1.01 (0.94, 1.12)\\
+\cmidrule{1-3}
+ & Female & 1.02 (0.97, 1.11)\\
+
+ & CHF & 1.03 (0.96, 1.15)\\
+
+ & CKD & 1.02 (0.96, 1.13)\\
+
+ & COPD & 1.00 (0.91, 1.09)\\
+
+ & Depression & 0.99 (0.87, 1.06)\\
+
+ & Diabetes & 1.04 (0.98, 1.13)\\
+
+ & Hypertension & 1.01 (0.94, 1.08)\\
+
+\multirow{-8}{*}{\raggedright\arraybackslash Non-Hispanic Asian and Pacific Islander} & Hyperlipidemia & 1.01 (0.95, 1.07)\\
+\cmidrule{1-3}
+ & Female & 0.94 (0.78, 1.04)\\
+
+ & CHF & 1.02 (0.90, 1.22)\\
+
+ & CKD & 1.09 (0.93, 1.35)\\
+
+ & COPD & 1.00 (0.84, 1.19)\\
+
+ & Depression & 1.03 (0.89, 1.22)\\
+
+ & Diabetes & 0.96 (0.79, 1.05)\\
+
+ & Hypertension & 1.00 (0.91, 1.14)\\
+
+\multirow{-8}{*}{\raggedright\arraybackslash Non-Hispanic Other} & Hyperlipidemia & 0.96 (0.82, 1.05)\\
+\bottomrule
+\multicolumn{3}{l}{\rule{0pt}{1em}\textsuperscript{a} $\bar{\tau}_{diff}$: Difference in marginal partial average exposure effects.}\\
+\multicolumn{3}{l}{\rule{0pt}{1em}Posterior mean and 95\% credible interval presented.}\\
+\end{tabular}
+\end{table}

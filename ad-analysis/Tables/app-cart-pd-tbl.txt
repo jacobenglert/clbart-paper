@@ -1,0 +1,89 @@
+\begin{table}
+\centering
+\caption{\label{tab:app-cart-pd-tbl}Lower Dimensional CART Summary Partial Dependence Estimates}
+\centering
+\fontsize{9}{11}\selectfont
+\begin{tabular}[t]{>{}c|cccccccccc}
+\toprule
+Subgroup & CHF & CKD & COPD & DEP & DIAB & HT & HLD & $\exp{\left( \bar{\tau} \right)}^a$ & $\Pr\left(\bar{\tau} > 0 \right)$ & $R^2$ $^b$\\
+\midrule
+ &  & - &  &  &  & - &  & 1.01 (0.98, 1.05) & 0.80 & 0.41\\
+
+ &  & + &  &  & - &  &  & 1.05 (1.01, 1.09) & 1.00 & 0.41\\
+
+ &  & + &  &  & + &  &  & 1.05 (1.01, 1.10) & 0.99 & 0.41\\
+
+ &  & - &  &  &  & + & - & 1.00 (0.96, 1.03) & 0.41 & 0.41\\
+
+\multirow{-5}{*}{\centering\arraybackslash \rotatebox{90}{Overall}} &  & - &  &  &  & + & + & 1.01 (0.97, 1.04) & 0.62 & 0.41\\
+\cmidrule{1-11}
+ & + & + &  &  &  &  &  & 1.02 (0.94, 1.13) & 0.65 & 0.89\\
+
+ & - & + &  &  &  &  &  & 1.04 (0.96, 1.17) & 0.74 & 0.89\\
+
+ &  & - &  &  & + & + &  & 0.96 (0.85, 1.03) & 0.20 & 0.89\\
+
+ &  & - &  &  & + & - &  & 0.97 (0.88, 1.04) & 0.27 & 0.89\\
+
+ &  & - &  &  & - & + &  & 0.98 (0.90, 1.04) & 0.28 & 0.89\\
+
+\multirow{-6}{*}{\centering\arraybackslash \rotatebox{90}{HISP}} &  & - &  &  & - & - &  & 0.99 (0.92, 1.06) & 0.40 & 0.89\\
+\cmidrule{1-11}
+ & + &  &  &  &  &  & - & 1.01 (0.97, 1.05) & 0.69 & 0.09\\
+
+ & - &  &  &  &  &  & - & 1.01 (0.98, 1.05) & 0.79 & 0.09\\
+
+ & + &  &  &  &  &  & + & 1.02 (0.98, 1.06) & 0.75 & 0.09\\
+
+\multirow{-4}{*}{\centering\arraybackslash \rotatebox{90}{NHW}} & - &  &  &  &  &  & + & 1.02 (0.99, 1.07) & 0.84 & 0.09\\
+\cmidrule{1-11}
+ &  &  &  &  & + & - &  & 1.27 (1.04, 1.53) & 0.99 & 0.79\\
+
+ &  &  & + &  & - & + &  & 0.95 (0.77, 1.11) & 0.29 & 0.79\\
+
+ &  &  & - &  & - & + &  & 1.02 (0.90, 1.17) & 0.63 & 0.79\\
+
+ &  &  & + &  & + & + &  & 1.02 (0.84, 1.20) & 0.56 & 0.79\\
+
+ &  &  & - &  & + & + &  & 1.09 (0.96, 1.25) & 0.88 & 0.79\\
+
+ &  &  & + &  & - & - &  & 1.13 (0.92, 1.39) & 0.89 & 0.79\\
+
+\multirow{-7}{*}{\centering\arraybackslash \rotatebox{90}{NHB}} &  &  & - &  & - & - &  & 1.22 (1.02, 1.43) & 0.99 & 0.79\\
+\cmidrule{1-11}
+ & - & - &  &  & - &  &  & 0.97 (0.86, 1.07) & 0.25 & 0.71\\
+
+ & + & - &  &  & - &  &  & 0.99 (0.88, 1.13) & 0.40 & 0.71\\
+
+ & - & + &  &  & - &  &  & 0.99 (0.89, 1.11) & 0.41 & 0.71\\
+
+ & + & + &  &  & - &  &  & 1.01 (0.90, 1.16) & 0.53 & 0.71\\
+
+ & - & - &  &  & + &  &  & 1.00 (0.89, 1.12) & 0.48 & 0.71\\
+
+ & + & - &  &  & + &  &  & 1.03 (0.91, 1.21) & 0.65 & 0.71\\
+
+ & - & + &  &  & + &  &  & 1.02 (0.91, 1.16) & 0.62 & 0.71\\
+
+\multirow{-8}{*}{\centering\arraybackslash \rotatebox{90}{NHAPI}} & + & + &  &  & + &  &  & 1.05 (0.93, 1.23) & 0.74 & 0.71\\
+\cmidrule{1-11}
+ &  & + &  &  & - &  &  & 1.01 (0.80, 1.27) & 0.46 & 0.39\\
+
+ &  & - &  &  & + &  & + & 0.86 (0.63, 1.05) & 0.10 & 0.39\\
+
+ &  & - &  &  & + &  & - & 0.90 (0.69, 1.08) & 0.16 & 0.39\\
+
+ &  & - &  &  & - &  & + & 0.90 (0.71, 1.09) & 0.16 & 0.39\\
+
+ &  & - &  &  & - &  & - & 0.94 (0.76, 1.11) & 0.24 & 0.39\\
+
+ &  & + &  &  & + &  & + & 0.93 (0.72, 1.17) & 0.25 & 0.39\\
+
+\multirow{-7}{*}{\centering\arraybackslash \rotatebox{90}{NHO}} &  & + &  &  & + &  & - & 0.97 (0.76, 1.19) & 0.34 & 0.39\\
+\bottomrule
+\multicolumn{11}{l}{\rule{0pt}{1em}\textsuperscript{a} $\bar{\tau}$: Partial average exposure effect. Posterior mean and 95\% credible interval presented.}\\
+\multicolumn{11}{l}{\rule{0pt}{1em}\textsuperscript{b} Summary $R^2$.}\\
+\multicolumn{11}{l}{\rule{0pt}{1em}HISP: Hispanic, NHW: Non-Hispanic White, NHB: Non-Hispanic Black, NHAPI: Non-Hispanic Asian and }\\
+\multicolumn{11}{l}{\rule{0pt}{1em}Pacific Islander, NHO: Non-Hispanic Other.}\\
+\end{tabular}
+\end{table}

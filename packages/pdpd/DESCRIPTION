@@ -1,0 +1,15 @@
+Package: pdpd
+Type: Package
+Title: Partial Dependence for Posterior Distributions
+Version: 0.1.1
+Authors@R: 
+    person("Anonymous", email = "anonymous@example.com", role = c("aut", "cre"))
+Description: Compute statistics to aid the interpretability of black-box 
+    Bayesian machine learning models.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports: 
+    stats,
+    yaImpute

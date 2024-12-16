@@ -1,0 +1,59 @@
+\begin{table}[!h]
+\centering
+\caption{\label{tab:ext-friedman-sim-beta-coverage}Extended Friedman Simulation Results - Confounder Estimates (Coverage)}
+\centering
+\fontsize{11}{13}\selectfont
+\begin{tabular}[t]{ccccccccc}
+\toprule
+\multicolumn{4}{c}{ } & \multicolumn{5}{c}{Coverage\textsuperscript{d}} \\
+\cmidrule(l{3pt}r{3pt}){5-9}
+Type & $M$\textsuperscript{a} & $k$\textsuperscript{b} & $(\gamma, \xi)$\textsuperscript{c} & $\beta_1$ & $\beta_2$ & $\beta_3$ & $\beta_4$ & $\beta_5$\\
+\midrule
+oracle &  &  &  & 0.98 & 0.96 & 0.92 & 0.95 & 0.96\\
+\midrule
+\addlinespace[2pt]\\
+clbart & 5 & 0.1 & (0.5, 3) & 0.97 & 0.96 & 0.92 & 0.93 & 0.94\\
+clbart & 5 & 0.1 & (0.95, 2) & 0.98 & 0.96 & 0.93 & 0.93 & 0.96\\
+clbart & 5 & 0.5 & (0.5, 3) & 0.97 & 0.97 & 0.93 & 0.93 & 0.95\\
+clbart & 5 & 0.5 & (0.95, 2) & 0.97 & 0.96 & 0.94 & 0.95 & 0.94\\
+clbart & 5 & 1.0 & (0.5, 3) & 0.98 & 0.96 & 0.93 & 0.93 & 0.94\\
+clbart & 5 & 1.0 & (0.95, 2) & 0.98 & 0.95 & 0.92 & 0.94 & 0.96\\
+\midrule
+\addlinespace[2pt]
+clbart & 10 & 0.1 & (0.5, 3) & 0.98 & 0.96 & 0.92 & 0.95 & 0.95\\
+clbart & 10 & 0.1 & (0.95, 2) & 0.97 & 0.96 & 0.92 & 0.93 & 0.95\\
+clbart & 10 & 0.5 & (0.5, 3) & 0.97 & 0.96 & 0.92 & 0.93 & 0.95\\
+clbart & 10 & 0.5 & (0.95, 2) & 0.97 & 0.95 & 0.92 & 0.93 & 0.94\\
+clbart & 10 & 1.0 & (0.5, 3) & 0.97 & 0.96 & 0.94 & 0.93 & 0.95\\
+clbart & 10 & 1.0 & (0.95, 2) & 0.97 & 0.95 & 0.92 & 0.93 & 0.95\\
+\midrule
+\addlinespace[2pt]
+clbart & 25 & 0.1 & (0.5, 3) & 0.98 & 0.97 & 0.92 & 0.93 & 0.96\\
+clbart & 25 & 0.1 & (0.95, 2) & 0.97 & 0.96 & 0.92 & 0.94 & 0.94\\
+clbart & 25 & 0.5 & (0.5, 3) & 0.97 & 0.97 & 0.92 & 0.93 & 0.95\\
+clbart & 25 & 0.5 & (0.95, 2) & 0.97 & 0.96 & 0.93 & 0.94 & 0.95\\
+clbart & 25 & 1.0 & (0.5, 3) & 0.97 & 0.96 & 0.92 & 0.93 & 0.95\\
+clbart & 25 & 1.0 & (0.95, 2) & 0.98 & 0.96 & 0.92 & 0.92 & 0.95\\
+\midrule
+\addlinespace[2pt]
+clbart & 50 & 0.1 & (0.5, 3) & 0.96 & 0.96 & 0.92 & 0.94 & 0.95\\
+clbart & 50 & 0.1 & (0.95, 2) & 0.97 & 0.96 & 0.93 & 0.94 & 0.95\\
+clbart & 50 & 0.5 & (0.5, 3) & 0.97 & 0.96 & 0.92 & 0.94 & 0.95\\
+clbart & 50 & 0.5 & (0.95, 2) & 0.97 & 0.96 & 0.92 & 0.93 & 0.95\\
+clbart & 50 & 1.0 & (0.5, 3) & 0.97 & 0.95 & 0.93 & 0.94 & 0.94\\
+clbart & 50 & 1.0 & (0.95, 2) & 0.97 & 0.96 & 0.92 & 0.92 & 0.96\\
+\midrule
+\addlinespace[2pt]
+clbart & 100 & 0.1 & (0.5, 3) & 0.97 & 0.96 & 0.93 & 0.94 & 0.95\\
+clbart & 100 & 0.1 & (0.95, 2) & 0.97 & 0.96 & 0.92 & 0.95 & 0.96\\
+clbart & 100 & 0.5 & (0.5, 3) & 0.96 & 0.95 & 0.92 & 0.93 & 0.95\\
+clbart & 100 & 0.5 & (0.95, 2) & 0.97 & 0.95 & 0.94 & 0.93 & 0.95\\
+clbart & 100 & 1.0 & (0.5, 3) & 0.97 & 0.96 & 0.92 & 0.94 & 0.94\\
+clbart & 100 & 1.0 & (0.95, 2) & 0.97 & 0.96 & 0.93 & 0.93 & 0.96\\
+\bottomrule
+\multicolumn{9}{l}{\rule{0pt}{1em}\textsuperscript{a} $M$: Number of trees.}\\
+\multicolumn{9}{l}{\rule{0pt}{1em}\textsuperscript{b} $k$: Numerator of scale parameter for half-Cauchy hyper-prior.}\\
+\multicolumn{9}{l}{\rule{0pt}{1em}\textsuperscript{c} $(\gamma, \xi)$: Hyperparameters for tree depth prior.}\\
+\multicolumn{9}{l}{\rule{0pt}{1em}\textsuperscript{d} 95\% credible interval coverage across 200 simulations.}\\
+\end{tabular}
+\end{table}

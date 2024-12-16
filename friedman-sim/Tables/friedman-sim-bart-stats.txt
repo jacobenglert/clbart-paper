@@ -1,0 +1,20 @@
+\begin{table}[!h]
+\centering
+\caption{\label{tab:friedman-sim-bart-stats}Friedman Simulation Results - BART Predictions}
+\centering
+\begin{tabular}[t]{cccccc}
+\toprule
+Type & $M$\textsuperscript{a} & Bias\textsuperscript{b} & RMSE\textsuperscript{b} & Coverage\textsuperscript{b} & Width\textsuperscript{b}\\
+\midrule
+oracle &  & -0.001 (0.001) & 0.040 (0.001) & 0.949 (0.016) & 0.160 (0.000)\\
+\midrule
+clbart & 5 & -0.001 (0.001) & 0.165 (0.001) & 0.801 (0.028) & 0.431 (0.002)\\
+clbart & 10 & -0.001 (0.001) & 0.144 (0.001) & 0.914 (0.020) & 0.502 (0.002)\\
+clbart & 25 & -0.001 (0.001) & 0.130 (0.001) & 0.967 (0.013) & 0.568 (0.002)\\
+clbart & 50 & -0.001 (0.001) & 0.127 (0.001) & 0.978 (0.010) & 0.596 (0.003)\\
+clbart & 100 & -0.001 (0.001) & 0.126 (0.001) & 0.980 (0.010) & 0.600 (0.003)\\
+\bottomrule
+\multicolumn{6}{l}{\rule{0pt}{1em}\textsuperscript{a} $M$: Number of trees.}\\
+\multicolumn{6}{l}{\rule{0pt}{1em}\textsuperscript{b} Monte Carlo mean and standard errors across 200 simulations reported.}\\
+\end{tabular}
+\end{table}

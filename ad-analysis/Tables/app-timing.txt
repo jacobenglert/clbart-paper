@@ -1,0 +1,23 @@
+\begin{table}
+\centering
+\caption{\label{tab:app-timing}Application Model Runtime}
+\centering
+\fontsize{12}{14}\selectfont
+\begin{threeparttable}
+\begin{tabular}[t]{lrr}
+\toprule
+Subgroup & Sample Size & Runtime$^a$\\
+\midrule
+Overall & 71020 & 150.77\\
+Hispanic & 11959 & 6.28\\
+Non-Hispanic White & 46019 & 34.48\\
+Non-Hispanic Black & 5635 & 3.77\\
+Non-Hispanic Asian and Pacific Islander & 5521 & 3.11\\
+Non-Hispanic Other & 1886 & 1.08\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item[a] Time taken to run one chain of a 25-tree CL-BART model (subgroups) or 100-tree CL-BART model (overall), in hours. All models were run using 1 CPU on the high performance computing cluster at the Rollins School of Public Health, Emory University.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

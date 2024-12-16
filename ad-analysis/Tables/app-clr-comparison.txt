@@ -1,0 +1,25 @@
+\begin{table}
+\centering
+\caption{\label{tab:app-clr-comparison}Homogeneous vs. Average Heterogeneous Estimate for Heat Wave Effect}
+\centering
+\fontsize{12}{14}\selectfont
+\begin{tabular}[t]{lcrcr}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{2}{c}{CLR} & \multicolumn{2}{c}{CL-BART} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5}
+Subgroup & $\exp{ \left( \hat{\tau} \right)}^a$ (95\% CI) & WAIC & $\exp{ \left( \bar{\tau} \right)}^b$ (95\% CrI) & WAIC\\
+\midrule
+Overall & 1.02 (0.99, 1.05) & 216,788 & 1.01 (0.99, 1.05) & 212,623\\
+Hispanic & 0.98 (0.91, 1.06) & 36,170 & 0.99 (0.92, 1.05) & 35,724\\
+Non-Hispanic API & 0.99 (0.89, 1.09) & 16,512 & 0.99 (0.90, 1.08) & 16,513\\
+Non-Hispanic Black & 1.09 (0.97, 1.21) & 16,874 & 1.07 (0.96, 1.21) & 16,868\\
+Non-Hispanic Other & 0.90 (0.73, 1.08) & 5,658 & 0.92 (0.76, 1.09) & 5,657\\
+Non-Hispanic White & 1.03 (0.99, 1.07) & 137,904 & 1.01 (0.98, 1.05) & 137,894\\
+\bottomrule
+\multicolumn{5}{l}{\rule{0pt}{1em}API: Asian and Pacific Islander.}\\
+\multicolumn{5}{l}{\rule{0pt}{1em}CLR: Conditional Logistic Regression.}\\
+\multicolumn{5}{l}{\rule{0pt}{1em}CI: Confidence Interval. CrI: Posterior Credible Interval.}\\
+\multicolumn{5}{l}{\rule{0pt}{1em}\textsuperscript{a} Estimated odds-ratio from frequentist CLR with no effect moderators.}\\
+\multicolumn{5}{l}{\rule{0pt}{1em}\textsuperscript{b} Average exposure effect from CL-BART model.}\\
+\end{tabular}
+\end{table}

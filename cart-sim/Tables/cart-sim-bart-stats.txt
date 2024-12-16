@@ -1,0 +1,20 @@
+\begin{table}[!h]
+\centering
+\caption{\label{tab:cart-sim-bart-stats}CART Simulation Results - BART Predictions}
+\centering
+\begin{tabular}[t]{cccccc}
+\toprule
+Type & $M$\textsuperscript{a} & Bias\textsuperscript{b} & RMSE\textsuperscript{b} & Coverage\textsuperscript{b} & Width\textsuperscript{b}\\
+\midrule
+oracle &  & 0.002 (0.001) & 0.036 (0.001) & 0.940 (0.017) & 0.144 (0.000)\\
+\midrule
+clbart & 1 & 0.000 (0.001) & 0.067 (0.001) & 0.819 (0.027) & 0.187 (0.003)\\
+clbart & 5 & 0.002 (0.001) & 0.056 (0.001) & 0.933 (0.018) & 0.211 (0.002)\\
+clbart & 10 & 0.002 (0.001) & 0.058 (0.001) & 0.952 (0.015) & 0.235 (0.002)\\
+clbart & 25 & 0.002 (0.001) & 0.063 (0.001) & 0.960 (0.014) & 0.266 (0.001)\\
+clbart & 50 & 0.002 (0.001) & 0.069 (0.001) & 0.958 (0.014) & 0.286 (0.001)\\
+\bottomrule
+\multicolumn{6}{l}{\rule{0pt}{1em}\textsuperscript{a} $M$: Number of trees.}\\
+\multicolumn{6}{l}{\rule{0pt}{1em}\textsuperscript{b} Monte Carlo mean and standard errors across 200 simulations reported.}\\
+\end{tabular}
+\end{table}

@@ -1,0 +1,29 @@
+\begin{table}
+\centering
+\caption{\label{tab:app-marg-pd-tbl-overall}Marginal Partial Dependence Estimates - Overall}
+\centering
+\fontsize{11}{13}\selectfont
+\begin{tabular}[t]{lc}
+\toprule
+Covariate & $\exp{\left( \bar{\tau}_{diff} \right)}^a$\\
+\midrule
+Hispanic & 0.99 (0.95, 1.02)\\
+Non-Hispanic White & 0.98 (0.95, 1.01)\\
+Non-Hispanic Black & 1.01 (0.97, 1.07)\\
+Non-Hispanic Asian and Pacific Islander & 1.02 (0.99, 1.07)\\
+Non-Hispanic Other & 0.99 (0.94, 1.05)\\
+\addlinespace
+Female & 1.00 (0.98, 1.02)\\
+CHF & 0.99 (0.96, 1.02)\\
+CKD & 1.05 (1.01, 1.08)\\
+COPD & 0.99 (0.95, 1.02)\\
+Depression & 0.99 (0.96, 1.02)\\
+Diabetes & 1.00 (0.98, 1.03)\\
+Hypertension & 0.99 (0.96, 1.01)\\
+Hyperlipidemia & 1.01 (0.99, 1.04)\\
+\bottomrule
+\multicolumn{2}{l}{\rule{0pt}{1em}\textsuperscript{a} $\bar{\tau}_{diff}$: Difference in marginal partial average exposure effects.}\\
+\multicolumn{2}{l}{\rule{0pt}{1em}Posterior mean and 95\% credible interval presented.}\\
+\multicolumn{2}{l}{\rule{0pt}{1em}Race/ethnicity covariates are mutually exclusive and one-hot encoded.}\\
+\end{tabular}
+\end{table}
