@@ -37,13 +37,13 @@ settings (see details for Option 1 below).
 The main CL-BART models are fit using the `clbart` R package. When many
 trees are specified or the dataset is very large, the model make take a
 while to fit on a personal computer. The work also makes use of the
-`pdpd` R package. These packages may be installed from this repository
-using the following code:
+`pdpd` R package. These packages may be installed from GitHub using the
+following code:
 
 ``` r
 # install.packages("devtools")
-devtools::install_local("packages/clbart", build_vignettes = TRUE)
-devtools::install_local("packages/pdpd")
+devtools::install_github("jacobenglert/clbart@v0.1.0", build_vignettes = TRUE)
+devtools::install_github("jacobenglert/pdpd@v0.1.1")
 ```
 
 Other packages used throughout this repository include `zoo`, `splines`,
