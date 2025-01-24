@@ -19,7 +19,7 @@ The purpose of this repository is to share how the results presented within the 
 -   `friedman-sim`: contains R and shell scripts to run the Friedman scenario simulation on an HPC Cluster, and an R script to generate the corresponding tables and figures.
 -   `ad-analysis`: contains an R script to generate data to mimic the health data, as well as more R and shell scripts to run the analyses on an HPC Cluster, and an R script to generate the corresponding tables and figures.
 
-Both of the simulation studies and the application were run entirely on the High Performance Computing (HPC) Cluster at [redacted] using a Slurm Workload Manager. The exact number of compute nodes used varied based on availability. If you do attempt to reproduce all of the results, any shell (.sh) scripts in this repository should be updated to work within the framework of the HPC cluster available to you.
+Both of the simulation studies and the application were run entirely on the High Performance Computing (HPC) Cluster at the Rollins School of Public Health at Emory University using a Slurm Workload Manager. The exact number of compute nodes used varied based on availability. If you do attempt to reproduce all of the results, any shell (.sh) scripts in this repository should be updated to work within the framework of the HPC cluster available to you.
 
 Alternatively, one can run a single iteration of either of the simulation studies, or a single model using synthetic data, by directly using the `run-\*.R` scripts located within the R/ sub-folders. This will require one to specify a random seed and the desired parameter settings (see details for Option 1 below).
 

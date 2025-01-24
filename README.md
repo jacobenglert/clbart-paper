@@ -20,11 +20,12 @@ the manuscript:
   tables and figures.
 
 Both of the simulation studies and the application were run entirely on
-the High Performance Computing (HPC) Cluster at \[redacted\] using a
-Slurm Workload Manager. The exact number of compute nodes used varied
-based on availability. If you do attempt to reproduce all of the
-results, any shell (.sh) scripts in this repository should be updated to
-work within the framework of the HPC cluster available to you.
+the High Performance Computing (HPC) Cluster at the Rollins School of
+Public Health at Emory University using a Slurm Workload Manager. The
+exact number of compute nodes used varied based on availability. If you
+do attempt to reproduce all of the results, any shell (.sh) scripts in
+this repository should be updated to work within the framework of the
+HPC cluster available to you.
 
 Alternatively, one can run a single iteration of either of the
 simulation studies, or a single model using synthetic data, by directly
